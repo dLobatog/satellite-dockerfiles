@@ -9,7 +9,6 @@ RUN yum -y install centos-release-SCL
 RUN yum -y install foreman; yum clean all
 RUN bash /opt/additions.sh
 RUN bash /opt/install.sh
-RUN foreman-rake permissions:reset username=admin password=changeme
 EXPOSE 3000
 WORKDIR /usr/share/foreman
 ENV RAILS_ENV production
