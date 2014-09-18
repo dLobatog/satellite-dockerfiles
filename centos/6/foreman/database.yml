@@ -1,0 +1,9 @@
+production:
+  adapter: postgresql
+  database: dockerdb
+  username: dockeruser
+  password: password
+  host: foreman-postgres
+  port: 5432
+  pool: 5
+  timeout: 5000
